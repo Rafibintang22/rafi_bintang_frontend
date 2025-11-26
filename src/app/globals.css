@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+    --background: #f7f2ef;
+    --foreground: #111827;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --backgroundHeader: linear-gradient(135deg, #11191a, #296377);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    font-family: var(--font-inter, "Inter"), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.gradient-header {
+    background-image: var(--backgroundHeader);
+}
+
+.card-shadow {
+    box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.06);
+}
